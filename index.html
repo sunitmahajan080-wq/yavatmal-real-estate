@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ytl Real Estate Agency | Yavatmal</title>
+<meta name="description" content="Ytl Real Estate Agency, Yavatmal. Buy, sell and invest in houses, plots, farmland and shops.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#000;--ink:#f4f2ef;--dim:#8c8783;--gold:#c9a96a;--pad:clamp(14px,2.6vw,34px);--serif:"Playfair Display","Times New Roman",serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+html{background:#000;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:84px}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:calc(var(--pad)*.8) var(--pad) 10px;mix-blend-mode:difference;color:#fff}
+.mark{font-family:var(--serif);font-size:clamp(19px,2.1vw,27px);line-height:1}
+.mark em{font-style:normal;color:#fff;opacity:.7}
+header a.c{font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.hero{position:relative;height:100vh;height:100svh;min-height:520px;overflow:hidden;perspective:1000px;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.hero.drag{cursor:grabbing}
+#orb{position:absolute;top:50%;left:50%;width:0;height:0;transform-style:preserve-3d}
+.card{position:absolute;top:0;left:0;width:var(--cw);height:calc(var(--cw)*1.2);margin-left:calc(var(--cw)/-2);margin-top:calc(var(--cw)*-.6);backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.card figure{position:relative;width:100%;height:100%;border-radius:4px;overflow:hidden;background:linear-gradient(160deg,#17171a,#0a0a0b);border:1px solid rgba(244,242,239,.16);display:flex;flex-direction:column;justify-content:flex-end;padding:calc(var(--cw)*.08)}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card figure::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.78))}
+.card .t,.card .s{position:relative;z-index:1}
+.card .t{font-family:var(--serif);font-size:clamp(15px,calc(var(--cw)*.17),24px);line-height:1.1}
+.card .s{font-size:clamp(9px,calc(var(--cw)*.08),11px);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:6px}
+.hl{position:absolute;inset:0;z-index:5;display:grid;place-content:center;text-align:center;pointer-events:none;padding:0 20px}
+.hl::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 46% 34% at 50% 50%,rgba(0,0,0,.72),transparent 100%)}
+h1{position:relative;font-family:var(--serif);font-weight:400;font-size:clamp(28px,5vw,64px);line-height:1.06;text-shadow:0 2px 34px rgba(0,0,0,.6)}
+.hl p{position:relative;margin-top:12px;font-size:clamp(12px,1.3vw,15px);letter-spacing:.2em;text-transform:uppercase;color:rgba(244,242,239,.7)}
+.cue{position:absolute;left:0;right:0;bottom:96px;z-index:6;text-align:center;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:rgba(244,242,239,.45);pointer-events:none}
+.info{width:min(1000px,92%);margin:0 auto;padding:70px 0 20px;display:grid;gap:36px;grid-template-columns:1fr}
+@media(min-width:800px){.info{grid-template-columns:repeat(3,1fr)}}
+.info h2{font-family:var(--serif);font-weight:400;font-size:28px;margin-bottom:12px}
+.info p,.info li{color:rgba(244,242,239,.75);font-size:14.5px;line-height:1.7}
+.info ul{list-style:none}
+.info .r{color:var(--gold);font-size:13px;letter-spacing:.08em;margin-bottom:6px}
+.pill{display:inline-grid;place-items:center;height:40px;padding:0 22px;border:1px solid rgba(244,242,239,.5);border-radius:40px;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin-top:14px;transition:background .25s,color .25s}
+.pill:hover{background:var(--ink);color:#000}
+.tag{text-align:center;color:var(--dim);font-size:12px;letter-spacing:.08em;margin:50px 16px 20px;line-height:1.7}
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;justify-content:center;gap:10px;padding:12px 14px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(transparent,#000 55%)}
+.dock a{flex:1;max-width:220px;height:46px;display:grid;place-items:center;border-radius:46px;font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+.dock .call{border:1px solid rgba(244,242,239,.6);background:rgba(0,0,0,.6)}
+.dock .wa{background:#25d366;color:#06220f}
+@media(max-width:640px){.hl p{letter-spacing:.14em}}
+</style>
+</head>
+<body>
+<header><a class="mark" href="#">Ytl <em>Real Estate</em></a><a class="c" href="#contact">Contact</a></header>
+
+<section class="hero" id="hero">
+  <div id="orb"></div>
+  <div class="hl"><h1>Buy, Sell &amp; Invest.</h1><p>घर &bull; प्लॉट &bull; शेती &nbsp;|&nbsp; Yavatmal</p></div>
+  <div class="cue">Drag to rotate &bull; Tap a card to ask on WhatsApp</div>
+</section>
+
+<section class="info" id="contact">
+  <div>
+    <h2>Ytl Real Estate Agency</h2>
+    <p class="r">4.4 &#9733; &middot; 16 Google reviews</p>
+    <p>Property brokers &amp; investors group. "Don't wait to buy real estate, buy real estate and wait."</p>
+    <a class="pill" href="tel:+919420166708">Call Vishal Dhote</a>
+  </div>
+  <div>
+    <h2>Visit the office</h2>
+    <p>Bharti Complex, Shop No. 5, Darwha Road, opposite Udyog Bhavan, Yavatmal, Maharashtra 445001<br>Open 24 hours</p>
+    <a class="pill" href="https://www.google.com/maps/search/?api=1&query=Ytl+Real+Estate+Agency+Bharti+Complex+Darwha+Road+Yavatmal+445001" target="_blank" rel="noopener">Directions</a>
+  </div>
+  <div>
+    <h2>What we deal in</h2>
+    <ul><li>Houses and flats</li><li>Plots and farmland</li><li>Shops and commercial</li><li>Luxury and vacation properties</li><li>Property investing</li></ul>
+  </div>
+</section>
+<p class="tag">Ytl Real Estate Agency &bull; Yavatmal &bull; 94201 66708</p>
+
+<nav class="dock"><a class="call" href="tel:+919420166708">Call</a><a class="wa" id="wa" href="#" target="_blank" rel="noopener">WhatsApp</a></nav>
+
+<script>
+var NUM="919420166708";
+function wa(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t)}
+var general=wa("Namaste! Mujhe property ke baare mein jaankari chahiye. Kya available hai aur price kitna hai?");
+document.getElementById("wa").href=general;
+var items=[
+ {t:"House",s:"घर"},{t:"Plot",s:"प्लॉट"},{t:"Farmland",s:"शेती"},{t:"Our Office",s:"Yavatmal",i:"sign.jpg"},
+ {t:"Shop",s:"दुकान"},{t:"Villa",s:"बंगला"},{t:"Invest",s:"Property investing"},{t:"Buy, Sale & Invest",s:"Visiting card",i:"card.jpg"},
+ {t:"Luxury",s:"Luxury properties"},{t:"Flat",s:"फ्लॅट"},{t:"घर, प्लॉट, शेती",s:"Yavatmal",i:"poster.jpg"},{t:"Vacation",s:"Vacation properties"},
+ {t:"Rent",s:"भाड्याने"},{t:"Commercial",s:"Offices & shops"}
+];
+var N=items.length,GA=Math.PI*(3-Math.sqrt(5)),hero=document.getElementById("hero"),orb=document.getElementById("orb"),cards=[],pts=[];
+items.forEach(function(it,k){
+  var y=1-(k/(N-1))*2,rad=Math.sqrt(Math.max(0,1-y*y)),th=k*GA,x=Math.cos(th)*rad,z=Math.sin(th)*rad;
+  pts.push({x:x,y:y,z:z,lat:Math.asin(y)*180/Math.PI,lon:Math.atan2(x,z)*180/Math.PI});
+  var c=document.createElement("div");c.className="card";
+  c.dataset.msg=it.i?"":"Namaste! Mujhe "+it.t+" ("+it.s+") ke baare mein jaankari chahiye. Kya available hai aur price kitna hai?";
+  c.innerHTML="<figure>"+(it.i?'<img src="'+it.i+'" alt="'+it.t+'" draggable="false">':"")+'<span class="t">'+it.t+'</span><span class="s">'+it.s+"</span></figure>";
+  orb.appendChild(c);cards.push(c);
+});
+var R=300;
+function layout(){
+  var w=innerWidth,h=innerHeight;
+  R=Math.max(120,Math.min(480,h*(w<=640?.34:.4),w*(w<=640?.5:.58)));
+  var cw=Math.round(Math.max(76,R*(w<=640?.62:.56)));
+  hero.style.setProperty("--cw",cw+"px");
+  hero.style.perspective=(w<=640?760:w<=900?920:1150)+"px";
+  cards.forEach(function(c,k){var p=pts[k];
+    c.style.transform="translate3d("+(p.x*R)+"px,"+(-p.y*R)+"px,"+(p.z*R)+"px) rotateY("+p.lon+"deg) rotateX("+p.lat+"deg)";});
+}
+var rx=-12,ry=0,vel=0,dragging=false,lastX=0,moved=0,downCard=null,still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function frame(){
+  if(!dragging){ry+=vel;vel*=.95;if(!still&&Math.abs(vel)<.05)ry+=.12;}
+  orb.style.transform="rotateX("+rx+"deg) rotateY("+ry+"deg)";
+  var a=ry*Math.PI/180,b=rx*Math.PI/180;
+  for(var k=0;k<N;k++){var p=pts[k],cy=-p.y,z1=-p.x*Math.sin(a)+p.z*Math.cos(a),z2=cy*Math.sin(b)+z1*Math.cos(b);
+    cards[k].style.opacity=(.3+.7*Math.max(0,Math.min(1,(z2+1)/2))).toFixed(2);}
+  requestAnimationFrame(frame);
+}
+hero.addEventListener("pointerdown",function(e){dragging=true;lastX=e.clientX;moved=0;vel=0;downCard=e.target.closest(".card");hero.classList.add("drag");});
+addEventListener("pointermove",function(e){if(!dragging)return;var dx=e.clientX-lastX;lastX=e.clientX;moved+=Math.abs(dx);ry+=dx*.4;vel=dx*.4;});
+function up(e){if(!dragging)return;dragging=false;hero.classList.remove("drag");
+  if(e.type==="pointerup"&&moved<6&&downCard){window.open(downCard.dataset.msg?wa(downCard.dataset.msg):general,"_blank");}
+  downCard=null;}
+addEventListener("pointerup",up);addEventListener("pointercancel",up);
+var lw=innerWidth,lh=innerHeight;
+addEventListener("resize",function(){if(Math.abs(innerWidth-lw)<20&&Math.abs(innerHeight-lh)<20)return;lw=innerWidth;lh=innerHeight;layout();});
+layout();frame();
+</script>
+</body>
+  </html>
